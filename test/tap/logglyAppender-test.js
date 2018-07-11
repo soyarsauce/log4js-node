@@ -41,7 +41,7 @@ function setupLogging(category, options) {
 
   const log4js = sandbox.require('../../lib/log4js', {
     requires: {
-      loggly: fakeLoggly,
+      'node-loggly-bulk': fakeLoggly,
       './layouts': fakeLayouts
     },
     globals: {
